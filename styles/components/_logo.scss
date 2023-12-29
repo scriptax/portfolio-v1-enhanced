@@ -1,0 +1,7 @@
+.animate-logo {
+  z-index: 2;
+  transition: transform 0.25s;
+  &:hover {
+    transform: translate(5px, -5px);
+  }
+}

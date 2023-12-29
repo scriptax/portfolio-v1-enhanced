@@ -1,0 +1,20 @@
+.list-bullet::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 8px;
+  margin-right: $base-margin;
+  margin-left: $base-margin;
+  border-style: solid;
+  border-width: 0px 0px 3px 3px;
+  border-color: red;
+  transform: rotate(-45deg) translate(0, -5px);
+}
+
+@each $key, $val in $colors {
+  .list-bullet-#{$key} {
+    &::before {
+      border-color: $val;
+    }
+  }
+}

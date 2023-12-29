@@ -1,0 +1,27 @@
+"use client";
+
+import { ReactNode } from "react";
+import Button from "./shared/Button";
+
+type MenuIconProps = {
+  handler: boolean;
+  children: ReactNode;
+};
+
+function Sidebar({ children, handler }: MenuIconProps) {
+  return (
+    <>
+      <aside className={`sidebar ${handler && "sidebar-open"}`}>
+        <ul className='font-lg'>
+          {children}
+          <li>
+            <Button customClasses='font-lg mt-2'>Resume</Button>
+          </li>
+        </ul>
+      </aside>
+      {handler && <div className='sidebar-overlay'></div>}
+    </>
+  );
+}
+
+export default Sidebar;

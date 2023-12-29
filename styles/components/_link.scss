@@ -1,0 +1,17 @@
+.link {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 0% 10%;
+  background-position: 0px 100%;
+  transition: background-size 0.25s;
+  padding: $base-padding * 0.5 0;
+}
+@each $key, $val in $colors {
+  .link-#{$key} {
+    background-image: linear-gradient($val 0%, $val 100%);
+    &:hover {
+      background-size: 100% 10%;
+      color: $val;
+    }
+  }
+}

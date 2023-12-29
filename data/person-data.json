@@ -1,0 +1,54 @@
+{
+  "name": "Majid Moradi",
+  "role": "Freelance front-end developer",
+  "location": "Iran",
+  "aboutme": "I’m a web developer with a passion for creating modern and functional websites and web apps. I have experience in HTML, CSS, JavaScript, and the world of React. I enjoy learning new technologies and exploring new challenges. Whether you need a landing page, a blog, an e-commerce site, or anything in between, I can help you turn your vision into reality.\nWhen I'm not pounding my keyboard, you'll probably find me playing guitar 🎸 or tinkering with electronics and building some cool stuff. These are the two other things except programming that make me happy. \nIf you are looking for a web developer who can handle any project with skill and professionalism, you have come to the right place. Let’s get to work and make something amazing 😎💻.",
+  "skillsText": "I've been exploring the world of web development for nearly 2 years now. Here are the skills I've learned along the way. I'm always looking to learn more though 😉.",
+  "skills": ["HTML", "CSS", "Sass", "Tailwind", "Javascript", "Typescript", "React", "Nodejs", "Express", "MongoDB"],
+  "otherSkills": ["ES6+", "Redux", "Framer Motion", "Gulp", "Git & Github", "Chrome DevTools", "Postman"],
+  "works": {
+    "budgetApp": {
+      "name": "Pocket",
+      "description": "This is my first full-stack project in MERN stack which i built to take my web development skills to another level. Pocket is a personal finance manager that lets you set budgets for your different expenses. You can easily record and keep track of your expense patterns and your income flow through an intuitive UI. In addition, Pocket allows you to analyze your previous cash flow with charts and visualizations. Pocket features a smooth, user-friendly and clean design. It won't let you miss a penny!",
+      "stack": ["express", "mongodb", "typescript", "react", "tailwind"],
+      "live": "https://pocket.stonebob.eu.org/",
+      "repo": "https://github.com/scriptax/budget-app/"
+    },
+    "translateApp": {
+      "name": "Translate App",
+      "description": "I built this translate app to test my skills with React. This app lets you translate between over 100 languages. You can type in to translate any text, and see or hear the translation in your desired language. The user can also switch between languages, paste or copy text with a single tap. In addition, you can access your previous translation history. This app is accurate, user-friendly, and featues a clean design. Make sure to give it a try!",
+      "stack": ["typescript", "react", "tailwind"],
+      "live": "https://translate.stonebob.eu.org/",
+      "repo": "https://github.com/scriptax/translate-app/"
+    },
+    "weatherApp": {
+      "name": "Weather App",
+      "description": "I built this weather app with an eye on simplicity to avoid using the over-engineered weather websites😅. This simple and elegant web app, gives you the current weather and forecast for any location in the world. You can see the temperature, humidity, wind speed, pressure, precipitation, and other details and get an hourly or a 15-day forecast as well. You can also switch between Celsius and Fahrenheit units too.",
+      "stack": ["html", "css", "javascript"],
+      "live": "https://weather.stonebob.eu.org/",
+      "repo": "https://github.com/scriptax/weather-app/"
+    },
+    "noteApp": {
+      "name": "Note App",
+      "description": "Note is a simple yet functional app for creating, editing, and managing text notes. You can use it to jot down a quick to-do list, a shopping list, a personal diary, or anything else. This mini-app allows you to organize them by categories and easily search for notes by keywords. It is responsive, user-friendly, and supports night-mode. As a bigginer, I learned a lot about CSS and Javascript in the end.",
+      "stack": ["html", "css", "javascript"],
+      "live": "https://scriptax.github.io/noteapp/",
+      "repo": "https://github.com/scriptax/noteapp/"
+    },
+    "stopWatchApp": {
+      "name": "Stopwatch App",
+      "description": "Stopwatch is a web app that lets you measure time with ease. Whether you need to track your workouts, your cooking, your games, or anything else, Stopwatch has you covered. You can start, stop, and reset the timer with a single tap, and also record multiple laps. This is one of my first web apps which greatly helped me learn more about Javascript",
+      "stack": ["html", "css", "javascript"],
+      "live": "https://scriptax.github.io/stopwatch/",
+      "repo": "https://github.com/scriptax/stopwatch/"
+    }
+  },
+  "contactText": "Whether you need a website, an app, or a custom solution, I can help you with that. Just drop me a line in the form below 👇 and tell me what you’re looking for. \nI'm also open to collaborate with other devs who share my passion for web development. If you have a project idea or a challenge that you want to tackle together, let me know. I'm always eager to learn new things and work with talented people.",
+  "socialLinks": [
+    ["email", "mailto:moradi.online@outlook.com"],
+    ["x", "https://x.com/ex"],
+    ["codepen", "https://codepen.io/scriptax"],
+    ["github", "https://github.com/scriptax"],
+    ["linkedin", "https://linkedin.com/ex"]
+  ]
+}

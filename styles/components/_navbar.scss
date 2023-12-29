@@ -1,0 +1,41 @@
+@use "sass:math";
+%flex-layout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.navbar {
+  @extend %flex-layout;
+  padding: $base-padding $base-padding * 2;
+  box-shadow: $base-box-shadow;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  .site-title {
+    font-size: $font-size-lg;
+  }
+  .container {
+    max-width: none;
+    @extend %flex-layout;
+  }
+  @media (max-width: 960px) {
+    .container {
+      max-width: none;
+      padding: 0 $base-padding;
+    }
+    .container ul {
+      display: none;
+    }
+  }
+}
+
+@each $key, $val in $colors {
+  .navbar-#{$key} {
+    @extend .navbar;
+    background-color: $val;
+  }
+}

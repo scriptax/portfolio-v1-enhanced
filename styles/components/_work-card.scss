@@ -1,0 +1,19 @@
+.work-card {
+  border-radius: 3px;
+  box-shadow: 0 0 0px 0 #aaaaaaa6;
+  transition: box-shadow 0.3s;
+  &:hover {
+    box-shadow: 0 0 10px 0 #aaaaaaa6;
+  }
+
+  & > div {
+    background-color: lighten($primary, 0.8);
+    border-radius: 2px;
+    box-shadow: 0 0 0px 0 #aaaaaaa6;
+    transition: box-shadow 0.3s, transform 0.3s;
+    &:hover {
+      box-shadow: 0 0 10px 0 #aaaaaaa6;
+      transform: translate(-4px, -4px);
+    }
+  }
+}

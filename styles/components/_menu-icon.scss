@@ -1,0 +1,30 @@
+.menu-icon-container {
+  display: none;
+  z-index: 20; 
+  cursor: pointer;
+  input {
+    display: none;
+    &:checked ~ div:nth-of-type(1) {
+      transform:  translate(0, 10px) rotate(45deg);
+    }
+    &:checked ~ div:nth-of-type(2) {
+      transform: translate(15vw, 0);
+    }
+    &:checked ~ div:nth-of-type(3) {
+      transform:  translate(0, -10px) rotate(-45deg);
+    }
+  }
+  div {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px auto 0;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .menu-icon-container {
+    display: block;
+  }
+}

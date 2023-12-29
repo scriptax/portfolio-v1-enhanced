@@ -1,0 +1,22 @@
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: $base-padding * 0.2 $base-padding $base-padding * 0.3;
+  border-radius: $base-border-radius * 0.1;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: color 0.3s, background 0.2s;
+}
+
+@each $key, $val in $colors {
+  .btn-outlined-#{$key} {
+    color: $val;
+    border: $base-border-thinkness solid $val;
+    background-image: linear-gradient($val 0%, $val 100%);
+    &:hover {
+      color: $primary;
+      background-size: 100% 100%;
+    }
+  }
+}
