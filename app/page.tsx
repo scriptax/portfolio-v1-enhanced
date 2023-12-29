@@ -8,6 +8,8 @@ import Footer from "@/components/footer/Footer";
 import getContent from "@/lib/content";
 import { ContentType } from "@/types/shared.types";
 
+export const revalidate = 3600 * 6;
+
 export default async function Home() {
   const contentData: Promise<any> = getContent();
   const contentObj = await contentData;
