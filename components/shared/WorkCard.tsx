@@ -13,11 +13,12 @@ function WorkCard({ data }: { data: WorkType }) {
       <div className='row'>
         <div className='col-12-xs col-6-md p-1 display-f align-center'>
           <Image
+            className='work-img'
             src={"https:" + data.fields.screenshot.fields.file.url}
             alt={data.fields.name}
             draggable='false'
-            width={425}
-            height={200}
+            width={data.fields.screenshot.fields.file.details.image.width}
+            height={data.fields.screenshot.fields.file.details.image.height}
             // style={{ width: "100%", height: "90%" }}
           />
         </div>
