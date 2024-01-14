@@ -4,16 +4,17 @@ import { AccentContext } from "@/contexts/AccentProvider";
 import { useContext } from "react";
 
 type NavlinkProps = {
+  href: string;
   text: string;
   sidebarClose: () => void;
 };
-export default function Navlink({ text, sidebarClose }: NavlinkProps) {
+export default function Navlink({ href, text, sidebarClose }: NavlinkProps) {
   const { accent } = useContext(AccentContext);
   return (
     <li className='mr-1'>
       <a
         className={`link link-${accent} pl-1 pr-1`}
-        href={"#" + text}
+        href={href}
         onClick={sidebarClose}
       >
         {text}

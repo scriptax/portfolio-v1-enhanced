@@ -18,7 +18,7 @@ function WorkCard({ data }: { data: WorkType }) {
             draggable='false'
             width={425}
             height={200}
-            style={{ width: "100%", height: "90%" }}
+            // style={{ width: "100%", height: "90%" }}
           />
         </div>
         <div className='col-12-xs col-6-md p-1'>

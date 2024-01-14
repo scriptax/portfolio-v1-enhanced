@@ -29,7 +29,12 @@ const Navbar = () => {
 
   const links = ["About", "Skills", "Work", "Contact"];
   const linksFormatetd = links.map((link) => (
-    <Navlink text={link} sidebarClose={sidebarHandler} key={link} />
+    <Navlink
+      href={"#" + link}
+      text={link}
+      sidebarClose={sidebarHandler}
+      key={link}
+    />
   ));
 
   return (
@@ -46,6 +51,11 @@ const Navbar = () => {
           </div>
           <ul className='display-f font-md'>
             {linksFormatetd}
+            <Navlink
+              href='https://blog.stonebob.eu.org'
+              text='Blog'
+              sidebarClose={sidebarHandler}
+            />
             <Button>Resume</Button>
           </ul>
         </div>
